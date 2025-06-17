@@ -1,0 +1,6 @@
+.main-content {
+  display: grid;
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 100%;
+}
