@@ -1,0 +1,84 @@
+.genre-filter {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #1a1a1a;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.genre-filter h3 {
+  color: #e50914;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.genre-filter-loading {
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.genre-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.genre-btn {
+  background: #333;
+  color: #fff;
+  border: 2px solid #333;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.genre-btn:hover {
+  background: #555;
+  border-color: #555;
+  transform: translateY(-2px);
+}
+
+.genre-btn.active {
+  background: #e50914;
+  border-color: #e50914;
+  color: white;
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.3);
+}
+
+.genre-btn.active:hover {
+  background: #b8070f;
+  border-color: #b8070f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .genre-filter {
+    padding: 1rem;
+  }
+  
+  .genre-buttons {
+    gap: 0.5rem;
+  }
+  
+  .genre-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .genre-filter h3 {
+    font-size: 1rem;
+  }
+  
+  .genre-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
+}

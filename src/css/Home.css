@@ -61,3 +61,55 @@
   width: 100%;
   box-sizing: border-box;
 }
+
+.error-message {
+  background: rgba(229, 9, 20, 0.1);
+  border: 1px solid #e50914;
+  color: #e50914;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.no-movies {
+  text-align: center;
+  color: #999;
+  font-size: 1.1rem;
+  padding: 3rem;
+  background: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.load-more-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.load-more-btn {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.load-more-btn:hover:not(:disabled) {
+  background: #b8070f;
+}
+
+.load-more-btn:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+.loading {
+  text-align: center;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 2rem;
+}

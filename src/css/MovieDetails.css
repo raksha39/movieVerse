@@ -1,0 +1,161 @@
+.movie-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.back-button {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background: #b8070f;
+}
+
+.movie-details-content {
+  display: flex;
+  gap: 40px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 30px;
+  color: white;
+}
+
+.movie-poster {
+  flex: 0 0 400px;
+}
+
+.movie-poster img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.movie-info {
+  flex: 1;
+}
+
+.movie-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #e50914;
+}
+
+.movie-meta {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.movie-meta span {
+  background: #333;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.rating {
+  background: #ffd700 !important;
+  color: #000 !important;
+  font-weight: bold;
+}
+
+.genres {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.genre-tag {
+  background: #e50914;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.overview h2 {
+  color: #e50914;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.overview p {
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  margin: 20px 0;
+  font-size: 18px;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  border-left: 4px solid #e50914;
+  background: #222;
+  border-radius: 5px;
+}
+
+.additional-info {
+  margin-top: 30px;
+  display: grid;
+  gap: 15px;
+}
+
+.info-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+.info-item strong {
+  color: #e50914;
+  margin-right: 10px;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+  color: white;
+}
+
+.error {
+  color: #e50914;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .movie-details-content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .movie-poster {
+    flex: none;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .movie-info h1 {
+    font-size: 2rem;
+  }
+  
+  .movie-meta {
+    justify-content: center;
+  }
+}
